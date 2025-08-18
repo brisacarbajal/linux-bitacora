@@ -1,0 +1,2 @@
+# linux-bitacora
+Comandos básicos 
