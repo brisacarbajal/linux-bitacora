@@ -1,9 +1,9 @@
-from flask import Flask, render_template
-app= Flask(__name__)
+from flask import flask
+app= flas(_name_)
 
-@app.route("/")
+@app.route('/')
 def main():
-    return "<h1>Brisetes </h1>"
+    return "<h1>PAKO </h1>"
 
 @app.route('/saluda')
 def saluda():
@@ -13,4 +13,4 @@ def saluda():
 def login():
     return render_template('login.html')
 
-app.run(host="0.0.0.0")
+app.run()
