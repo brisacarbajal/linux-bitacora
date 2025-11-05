@@ -9,19 +9,19 @@ async def inteligencia(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     mensaje = update.message.text
     respuesta = ""
     print(mensaje)
-    if mensaje == "bitacora":
-        respuesta = "Has seleccionado la bitácora."
-    if mensaje == "Correo":
-        respuesta = "Has seleccionado el correo."
+    if mensaje == "Reporte":
+        respuesta = "Has seleccionado el reporte."
+    if mensaje == "Ayuda":
+        respuesta = "Has seleccionado la ayuda."
 
     await update.message.reply_text(respuesta)
 
 async def menu(update:Update, context:CallbackContext)-> None:
-    keyboard =[KeyboardButton("Listas de productos")],
-    [KeyboardButton("Mapa")],
-    [KeyboardButton("Horarios")],
-    [KeyboardButton("N")],
-    [KeyboardButton("Servicios")],
+    keyboard =[KeyboardButton("Opciones")],
+    [KeyboardButton("Llenadr reporte")],
+    [KeyboardButton("Ayuda")],
+    [KeyboardButton("Contacto")],
+    [KeyboardButton("Soporte")],
     [KeyboardButton("Denuncia")],
     
     menu_choices = ReplyKeyboardMarkup(keyboard)
